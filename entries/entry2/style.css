@@ -1,14 +1,18 @@
-@font-face {
-  font-family: Dream Orphans;
-  src: url(../../fonts/dream\ orphans.otf);
+@import url("https://use.typekit.net/xej1fur.css");
+
+.quiver-leaf {
+  font-family: "quiverleaf-cf", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 body {
   background-color: #4379f2;
 }
 h1 {
   text-align: center;
   font-size: 10vw;
-  font-family: Dream Orphans;
+  font-family: "quiverleaf-cf", sans-serif;
   font-style: italic;
   font-weight: bolder;
   color: #ffeb00;
@@ -16,7 +20,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 200%;
-  font-family: Dream Orphans;
+  font-family: "quiverleaf-cf", sans-serif;
   font-style: italic;
   font-weight: normal;
   color: #ffeb00;
@@ -24,17 +28,17 @@ h2 {
 h3 {
   text-align: center;
   font-size: 200%;
-  font-family: Dream Orphans;
+  font-family: "quiverleaf-cf", sans-serif;
   font-style: italic;
   font-weight: normal;
   color: #ffeb00;
 }
 p {
-  font-family: Dream Orphans;
+  font-family: "quiverleaf-cf", sans-serif;
   text-align: center;
 }
 pre {
-  font-family: Dream Orphans;
+  font-family: "quiverleaf-cf", sans-serif;
   text-align: center;
 }
 /*td{
@@ -98,7 +102,7 @@ img {
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  font-family: Dream Orphans;
+  font-family: "quiverleaf-cf", sans-serif;
   padding-bottom: 5vh;
 }
 
@@ -225,7 +229,7 @@ img {
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    font-family: Dream Orphans;
+    font-family: "quiverleaf-cf", sans-serif;
     padding-bottom: 5vh;
   }
 
@@ -246,7 +250,7 @@ img {
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    font-family: Dream Orphans;
+    font-family: "quiverleaf-cf", sans-serif;
     padding-bottom: 5vh;
   }
 
@@ -267,7 +271,7 @@ img {
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    font-family: Dream Orphans;
+    font-family: "quiverleaf-cf", sans-serif;
     padding-bottom: 5vh;
   }
 
