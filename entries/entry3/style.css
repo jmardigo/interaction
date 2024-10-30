@@ -1,0 +1,118 @@
+@import url("https://p.typekit.net/p.css?s=1&k=xej1fur&ht=tk&f=51557&a=166250822&app=typekit&e=css");
+
+@font-face {
+  font-family:"antipoda-variable";
+  src:url("https://use.typekit.net/af/9c2374/0000000000000000774b908b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9c2374/0000000000000000774b908b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9c2374/0000000000000000774b908b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+  font-family:"fit-tamil-variable";
+  src:url("https://use.typekit.net/af/87976d/000000000000000077543efd/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/87976d/000000000000000077543efd/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/87976d/000000000000000077543efd/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-antipoda-variable { font-family: "antipoda-variable",sans-serif; }
+.tk-fit-tamil-variable { font-family: "fit-tamil-variable",sans-serif; }
+
+
+
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+h1 {
+    font-family: antipoda-variable;
+    font-size: 8vw;
+	z-index: 1;
+	color: aliceblue;
+    text-align: center;
+    padding-top: 5vh;
+    /*animation: width 5s linear infinite alternate;*/
+    animation: weight 5s ease-in-out infinite alternate; /*this does the weight variation animation.
+    calls "weight" animation function, progresses linearly, loops infinitely, alternate between going forward
+    and backwards*/
+}
+
+h3 {
+  font-family: antipoda-variable;
+  font-weight: 1200;
+  color: transparent;
+}
+
+@keyframes weight {
+  from {font-variation-settings: "wdth" 50, "wght" 150;}
+  to {font-variation-settings: "wdth" 150, "wght" 900;}
+  }
+#toppad {
+  padding-top: 25vh;
+  position: relative;
+}
+p {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+p.text1 {
+	color: aliceblue;
+	z-index: -1;
+	text-align: center;
+}
+p.text2 {
+	color: aliceblue;
+	mix-blend-mode: color-dodge;
+	z-index: -1;
+	text-align: center;
+}
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -2;
+}
+
+
+.wrapper{
+  display: flex;
+  font-size: 2vw;
+  flex-direction:column
+}
+
+.nav {
+  position: fixed;
+  float: right;
+  color: white;
+  font-family: just me again down here;
+  text-align: center;
+  bottom: 2vh;
+  left: 2vh;
+  text-decoration: none;
+  a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+  }
+  img{
+      width: 5vw;
+      transition: ease-in-out 0.25s;
+  }
+}
+
+.nav:hover{
+  img{
+      scale: 120%;
+  }
+}

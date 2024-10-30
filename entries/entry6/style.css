@@ -1,0 +1,286 @@
+@import url("https://p.typekit.net/p.css?s=1&k=xej1fur&ht=tk&f=363.366.1150.51557.51929.51930.55979.56530.56534.56535&a=166250822&app=typekit&e=css");
+
+@font-face {
+  font-family: "antipol-variable";
+  src: url("https://use.typekit.net/af/69b22c/0000000000000000774eecd5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/69b22c/0000000000000000774eecd5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/69b22c/0000000000000000774eecd5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "antipol-variable";
+  src: url("https://use.typekit.net/af/f87015/0000000000000000774eecd6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/f87015/0000000000000000774eecd6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/f87015/0000000000000000774eecd6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+.tk-antipol-variable {
+  font-family: "antipol-variable", sans-serif;
+}
+
+body {
+  /*hello*/
+  background-size: 100vw;
+  background-repeat: repeat;
+  align-items: center;
+  background-color: grey;
+  background-image: url(https://www.waveringstripes.com/static/media/Texture.c40cb5f6.gif);
+  background-size: auto;
+  
+  
+}
+
+
+.word {
+  /*default span*/
+  display: inline-flex;
+  font-family: "antipol-variable", sans-serif;
+  font-variation-settings: "STCH" 1, "wdth" 100, "wght" 300; /*original state*/
+  transition: 1s ease; /*activates a smooth transition to the hover state*/
+  mix-blend-mode: exclusion;
+}
+
+.word:hover {
+  /*to stretch each word*/
+  font-variation-settings: "STCH" 1, "wdth" 500, "wght" 300; /*new state after hover*/
+  white-space: nowrap;
+  overflow: hidden;
+  mix-blend-mode: exclusion;
+  color: transparent;
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+  /*border: 10px solid red;*/
+  /*flex-wrap: wrap;*/
+}
+
+.nav {
+  position: fixed;
+  float: right;
+  color: white;
+  font-family: just me again down here;
+  text-align: center;
+  bottom: 2vh;
+  left: 2vh;
+  border-radius: 25vh;
+  text-decoration: none;
+  a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+  }
+  img{
+      width: 5vw;
+      transition: ease-in-out 0.25s;
+  }
+}
+
+.nav:hover{
+  img{
+      scale: 120%;
+  }
+}
+
+/*.maintextmobile{
+    border: 10px solid deepskyblue;
+}
+.maintexttablet{
+    border: 10px solid green;
+}
+.maintextdesktop{
+    border: 10px solid blue;
+}*/
+
+
+
+span {
+  font-weight: bold;
+  /*color: white;*/
+}
+
+@media all and (max-width: 800px) /*mobile*/ {
+
+
+  .maintextmobile {
+    width: 100%;
+    order: 3;
+    font-family: sans-serif;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 1vh;
+    overflow: hidden;
+    color: rgb(0, 255, 0);
+  }
+
+  .maintexttablet {
+    display: none;
+  }
+
+  .maintextdesktop {
+    display: none;
+  }
+
+  .marquee1{
+    color: rgb(0, 255, 0);
+  }
+
+  .marquee2{
+    color: rgb(0, 255, 0);
+
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1439px) /*tablet*/ {
+  
+
+  .marquee1 {
+    color: rgb(77, 255, 0);
+
+  }
+
+  .marquee2 {
+    color: rgb(77, 255, 0);
+  }
+
+  .maintextmobile {
+    display: none;
+  }
+
+  .maintexttablet {
+    order: 3;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    justify-items: space-evenly;
+    align-items: space-evenly;
+    font-size: 3vw;
+    font-weight: bold;
+    color: rgb(77, 255, 0);
+    padding: 1vh;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  /*rgb(77, 255, 0)*/
+
+  .maintextdesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) /*desktop*/ {
+ 
+
+  .maintextmobile {
+    display: none;
+  }
+
+  .maintexttablet {
+    display: none;
+  }
+
+  .marquee1{
+    color: rgb(214, 255, 93);
+  }
+
+  .marquee2{
+    color: rgb(214, 255, 93);
+  }
+
+  .maintextdesktop {
+    order: 3;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    justify-items: space-evenly;
+    align-items: space-evenly;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1vh;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(214, 255, 93);
+
+  }
+}
+
+.marquee1 {
+  width: 100%; /* full width */
+  order: 2; /*places the scroll between the main content and the nav bar*/
+  overflow: hidden; /* hides the scrolling */
+  white-space: nowrap; /* stops text wrapping */
+  /*border: 10px solid yellow;*/
+  padding: 8vh;
+  font-size: 5vw;
+
+  mix-blend-mode: exclusion;
+  font-family: "antipol-variable", sans-serif;
+  font-variation-settings: "STCH" 1, "wdth" 100, "wght" 900;
+}
+
+.marqueecontent1 {
+  display: inline-block; /* keep items in line */
+  animation: scroll 10s linear infinite; /* animation settings */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%); /* start on the right side */
+  }
+  to {
+    transform: translateX(-100%); /* end on the left side */
+  }
+}
+.marquee2 {
+  width: 100%; /* full width */
+  order: 4; /*places the scroll after main content*/
+  overflow: hidden; /* hides the scrolling */
+  white-space: nowrap; /* stops text wrapping */
+  /*border: 10px solid yellow;*/
+  font-size: 5vw;
+ 
+  mix-blend-mode: exclusion;
+  padding: 10vh;
+  font-family: "antipol-variable", sans-serif;
+  font-variation-settings: "STCH" 1, "wdth" 100, "wght" 900;
+}
+
+.marqueecontent2 {
+  display: inline-block; /* keep items in line */
+  animation: scroll 30s linear infinite; /* animation settings */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%); /* start on the right side */
+  }
+  to {
+    transform: translateX(-100%); /* end on the left side */
+  }
+}

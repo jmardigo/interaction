@@ -1,0 +1,127 @@
+@import url("https://use.typekit.net/nhi2vmu.css");
+@import url("https://use.typekit.net/xej1fur.css");
+@import url("https://use.typekit.net/xej1fur.css");
+
+.chainprinter {
+  font-family: "chainprinter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*font-family: "superior-title",serif;*/
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+/*
+.wrapper > div {
+  background-color: red
+}*/
+
+.grid-container {
+  grid-template-columns: auto auto auto;
+  gap: 2vh;
+  /*align-content: center;*/
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 2vw;
+}
+
+.grid-container > div {
+  background-color: transparent /*rgba(255, 255, 255, 0.8)*/;
+  text-align: center;
+  /*border: black 5px solid;*/
+  transition: ease-in-out 0.5s;
+}
+
+.grid-container > div:hover {
+  scale: 110%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10vw;
+  /*font-family: "superior-title",serif;*/
+  font-family: "chainprinter", sans-serif;
+  /*animation-name: shifting;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;*/
+}
+
+@media all and (max-width: 600px) /*mobile*/ {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 2vw;
+    /*background-color: red;*/
+    img {
+      width: 60vw;
+    }
+  }
+  .grid-container > div {
+    padding: 2vw;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1439px) /*tablet*/ {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin: 2vw;
+    img {
+      width: 35vw;
+    }
+  }
+  .grid-container > div {
+    padding: 3vw;
+  }
+}
+
+@media (min-width: 1440px) /*desktop*/ {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 3vw;
+    margin: 5vw;
+    padding-bottom: 2vw;
+    img {
+      width: 20vw;
+    }
+  }
+  .grid-container > div {
+    padding: 2vw;
+  }
+}
+
+/*to fix the grid issue, swap the flex type from grid to column on mobile. i'm just too lazy to do it rn <3*/
+
+.nav {
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  padding-top: 0vw;
+  padding-bottom: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vw;
+  border: 5px solid black;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: auto;
+  a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+}

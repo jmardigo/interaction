@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(246, 254, 255);
+
+}
+h1{
+    text-align: center;
+    font-size: 75px;
+    font-family: Garamond, serif;
+    font-style: italic;
+    font-weight: bolder;
+
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+    font-family: Garamond, serif;
+    font-style: italic;
+    font-weight: bold;
+
+}
+p{
+    font-family: Garamond, serif;
+    text-align: center;
+}
+pre{
+    font-family: Garamond, serif;
+    text-align: center;
+}
+mark{
+    background-color: rgb(204, 225, 255);
+}
+
+a:link, a:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5vh;
+    text-align: center;
+    font-size: 3vh;
+    background-color: rgb(204, 225, 255);
+    color: black;
+    text-wrap: wrap;
+    text-decoration: none;
+  }
+  
+  a:hover, a:active {
+    background-color: transparent;
+    color: black;
+  }

@@ -1,0 +1,279 @@
+@font-face {
+  font-family: Dream Orphans;
+  src: url(../../FONTS/Dream\ Orphans.otf);
+}
+body {
+  background-color: #4379f2;
+}
+h1 {
+  text-align: center;
+  font-size: 10vw;
+  font-family: Dream Orphans;
+  font-style: italic;
+  font-weight: bolder;
+  color: #ffeb00;
+}
+h2 {
+  text-align: center;
+  font-size: 200%;
+  font-family: Dream Orphans;
+  font-style: italic;
+  font-weight: normal;
+  color: #ffeb00;
+}
+h3 {
+  text-align: center;
+  font-size: 200%;
+  font-family: Dream Orphans;
+  font-style: italic;
+  font-weight: normal;
+  color: #ffeb00;
+}
+p {
+  font-family: Dream Orphans;
+  text-align: center;
+}
+pre {
+  font-family: Dream Orphans;
+  text-align: center;
+}
+/*td{
+  padding: 10%;
+}*/
+
+/*td{
+  padding: 50px;
+}*/
+hr {
+  border-width: 3px;
+  border-color: #c68fe6;
+}
+
+img {
+  size: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+.nav {
+  position: fixed;
+  float: right;
+  color: white;
+  font-family: just me again down here;
+  text-align: center;
+  bottom: 2vh;
+  left: 2vh;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 5vw;
+    transition: ease-in-out 0.25s;
+  }
+}
+
+.nav:hover {
+  img {
+    scale: 120%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5vw;
+  /*background-color: red;*/
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  font-family: Dream Orphans;
+  padding-bottom: 5vh;
+}
+
+.grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeb00;
+  border: 3px solid #ffeb00;
+  border-radius: 2vw;
+  color: #4379f2;
+  transition: ease-in-out 0.5s;
+  padding: 2%;
+}
+
+.grid-container > div:hover {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #4379f2;
+  border: 3px solid #ffeb00;
+  border-radius: 2vw;
+  color: #ffeb00;
+}
+
+.item1:after {
+  text-align: center;
+  content: "i'll be there";
+  transition: ease-in-out 0.5s;
+}
+
+.item1:hover:after {
+  content: "to play my part";
+  text-align: center;
+}
+
+.item2:after {
+  text-align: center;
+  content: "wanna keep us";
+  transition: ease-in-out 0.5s;
+}
+.item2:hover:after {
+  content: "safe from harm";
+  text-align: center;
+}
+
+.item3:after {
+  text-align: center;
+  content: "and a love";
+  transition: ease-in-out 0.5s;
+}
+
+.item3:hover:after {
+  content: "was in my heart";
+  text-align: center;
+}
+
+.item4:after {
+  text-align: center;
+  content: "that i feel";
+  transition: ease-in-out 0.5s;
+}
+
+.item4:hover:after {
+  content: "now";
+  text-align: center;
+}
+
+.item5:after {
+  content: "though it wasn't";
+  text-align: center;
+  transition: ease-in-out 0.5s;
+}
+
+.item5:hover:after {
+  content: "there";
+  text-align: center;
+}
+
+.item6:after {
+  content: "get it back";
+  text-align: center;
+  transition: ease-in-out 0.5s;
+}
+
+.item6:hover:after {
+  content: "get nowhere";
+  text-align: center;
+}
+
+.item7:after {
+  content: "get it back";
+  text-align: center;
+  transition: ease-in-out 0.5s;
+}
+
+.item7:hover:after {
+  content: "follow my heart";
+  text-align: center;
+}
+
+.item8:after {
+  content: "back to";
+  text-align: center;
+  transition: ease-in-out 0.5s;
+}
+
+.item8:hover:after {
+  content: "back to oz";
+  text-align: center;
+}
+
+@media all and (max-width: 800px) /*mobile*/ {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5vw;
+    /*background-color: red;*/
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    font-family: Dream Orphans;
+    padding-bottom: 5vh;
+  }
+
+  .grid-container > div {
+    height: 20vw;
+    width: 50vw;
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1439px) /*tablet*/ {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5vw;
+    /*background-color: red;*/
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    font-family: Dream Orphans;
+    padding-bottom: 5vh;
+  }
+
+  .grid-container > div {
+    height: 30vw;
+    width: 29vw;
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 1440px) /*desktop*/ {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5vw;
+    /*background-color: red;*/
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    font-family: Dream Orphans;
+    padding-bottom: 5vh;
+  }
+
+  .grid-container > div {
+    height: 20vw;
+    width: 19vw;
+    font-size: 3vw;
+  }
+}
