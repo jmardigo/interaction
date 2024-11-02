@@ -138,7 +138,8 @@ img {
   transition: ease-in-out 0.5s;
 }
 
-.item1:hover:after {
+.item1:hover:after,
+.item1:active {
   content: "to play my part";
   text-align: center;
 }
@@ -148,7 +149,8 @@ img {
   content: "wanna keep us";
   transition: ease-in-out 0.5s;
 }
-.item2:hover:after {
+.item2:hover:after,
+.item2:active {
   content: "safe from harm";
   text-align: center;
 }
@@ -159,7 +161,8 @@ img {
   transition: ease-in-out 0.5s;
 }
 
-.item3:hover:after {
+.item3:hover:after,
+.item3:active {
   content: "was in my heart";
   text-align: center;
 }
@@ -170,7 +173,8 @@ img {
   transition: ease-in-out 0.5s;
 }
 
-.item4:hover:after {
+.item4:hover:after,
+.item4:active {
   content: "now";
   text-align: center;
 }
@@ -181,7 +185,8 @@ img {
   transition: ease-in-out 0.5s;
 }
 
-.item5:hover:after {
+.item5:hover:after,
+.item5:active {
   content: "there";
   text-align: center;
 }
@@ -192,7 +197,8 @@ img {
   transition: ease-in-out 0.5s;
 }
 
-.item6:hover:after {
+.item6:hover:after,
+.item6:active {
   content: "get nowhere";
   text-align: center;
 }
@@ -203,7 +209,8 @@ img {
   transition: ease-in-out 0.5s;
 }
 
-.item7:hover:after {
+.item7:hover:after,
+.item7:active {
   content: "follow my heart";
   text-align: center;
 }
@@ -214,7 +221,8 @@ img {
   transition: ease-in-out 0.5s;
 }
 
-.item8:hover:after {
+.item8:hover:after,
+.item8:active {
   content: "back to oz";
   text-align: center;
 }
@@ -280,4 +288,8 @@ img {
     width: 19vw;
     font-size: 3vw;
   }
+}
+
+:root {
+  --swiper-navigation-size: 44px;
 }
