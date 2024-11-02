@@ -11,7 +11,7 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 10vw;
+  font-size: 20vw;
   font-family: "quiverleaf-cf", sans-serif;
   font-style: italic;
   font-weight: bolder;
@@ -82,7 +82,7 @@ img {
     justify-content: center;
   }
   img {
-    width: 5vw;
+    width: 10vw;
     transition: ease-in-out 0.25s;
   }
 }
@@ -242,9 +242,9 @@ img {
   }
 
   .grid-container > div {
-    height: 20vw;
-    width: 50vw;
-    font-size: 6vw;
+    height: 40vw;
+    width: 80vw;
+    font-size: 10vw;
   }
 }
 
