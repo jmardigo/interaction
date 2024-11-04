@@ -1,17 +1,186 @@
 body {
   background-color: transparent;
+  scroll-behavior: smooth;
 }
 
-.typewriter1 p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+@font-face {
+  font-family: "chinchilla";
+  src: url("https://use.typekit.net/af/b4d8bc/0000000000000000773596fc/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/b4d8bc/0000000000000000773596fc/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/b4d8bc/0000000000000000773596fc/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
 }
 
-/* The typing effect */
+@font-face {
+  font-family: "chaloops";
+  src: url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/e0674b/0000000000000000773597b5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "hey-eloise";
+  src: url("https://use.typekit.net/af/32d59a/00000000000000007735fbe7/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/32d59a/00000000000000007735fbe7/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/32d59a/00000000000000007735fbe7/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "canvas-inline";
+  src: url("https://use.typekit.net/af/06eaee/0000000000000000774ba090/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/06eaee/0000000000000000774ba090/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/06eaee/0000000000000000774ba090/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+}
+
+.canvas-inline {
+  font-family: "canvas-inline", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.hey-eloise {
+  font-family: "hey-eloise", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.peachy-keen {
+  font-family: "peachy-keen-jf", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.chinchilla {
+  font-family: "chinchilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chaloops {
+  font-family: "chaloops", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*animation-delay: 3.5s*/
+
+.typewriter1 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1s steps(20, end) forwards;
+  animation-delay: 2s; /*giving the user time to process that the page had loaded*/
+}
+
+.typewriter2 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  text-align: right;
+  font-family: "chaloops";
+
+  animation: typing 1s steps(20, end) forwards;
+  animation-delay: 3s;
+}
+
+.typewriter3 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1s steps(20, end) forwards;
+  animation-delay: 4s;
+}
+
+.typewriter4 {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "hey-eloise";
+
+  width: 0;
+  text-align: right;
+
+  animation: typing 1s steps(20, end) forwards;
+  animation-delay: 5s;
+}
+
+.typewriter5 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1.5s steps(30, end) forwards;
+  animation-delay: 6s;
+}
+
+.typewriter6 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+  font-family: "canvas-inline";
+  width: 0;
+  animation: typing 1s steps(20, end) forwards;
+  animation-delay: 7s;
+}
+
+.typewriter7 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  width: 0;
+  animation: typing 1s steps(20, end) forwards;
+  animation-delay: 8s;
+}
+
+.container-r {
+  display: inline-block;
+  background-color: transparent;
+  float: right;
+  margin: 2.5vh;
+}
+
+.container-l {
+  display: inline-block;
+  background-color: transparent;
+  float: left;
+  margin: 2.5vh;
+  font-family: "chinchilla";
+}
+
+.container-c {
+  display: inline-block;
+  background-color: transparent;
+  font-family: "chinchilla";
+
+  float: center;
+  margin: 2.5vh;
+}
+
 @keyframes typing {
   from {
     width: 0;
@@ -21,13 +190,139 @@ body {
   }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+@keyframes fade-in {
+  from {
+    opacity: 0%;
   }
-  50% {
-    border-color: orange;
+  to {
+    opacity: 100%;
   }
 }
+
+.texting-container {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  float: center;
+  margin-top: 5vh;
+}
+
+.scroll-button {
+  display: flex;
+  background-color: transparent;
+  margin: 10vh;
+  animation: fade-in 2s forwards;
+  animation-delay: 9s;
+  opacity: 0%;
+  font-family: chinchilla, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#onetwothreefour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vw;
+    padding: 5vw;
+    text-align: center;
+  margin-top: 100vh;
+  height: auto;
+  background-color: transparent;
+  
+}
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 40vh;
+  }
+}
+
+.wrapper > div{
+    transition: ease-in-out;
+}
+
+p {
+  font-family: chinchilla;
+  text-transform: uppercase;
+  font-size: 10vw;
+}
+
+@media all and (max-width: 600px) /*mobile*/ {
+    .texting-container{
+        width: 90vw;
+    
+    }
+    .texting-container > div{
+        font-size: 8vw;
+    }
+    .scroll-button{
+        height: auto;
+        width: 50vw;
+        font-size: 10vw;
+        padding: 3vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) /*tablet*/ {
+    .texting-container{
+        width: 70vw;
+    }
+    .texting-container > div{
+        font-size: 4vw;
+    }
+    .scroll-button{
+        height: auto;
+        width: 50vw;
+        font-size: 12vh;
+        padding: 2vw;
+    }
+}
+
+@media (min-width: 1001px) /*desktop*/ {
+    .texting-container{
+        width: 50vw;
+    }
+    .texting-container > div{
+        font-size: 3vw;
+    }
+    .scroll-button{
+        height: auto;
+        width: 40vw;
+        font-size: 8vh;
+        padding: 3vw;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    position: fixed;
+    bottom: 2vh;
+    left: 2vh;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 10vw;
+      transition: ease-in-out 0.25s;
+    }
+  }
