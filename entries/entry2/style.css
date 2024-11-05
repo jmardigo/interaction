@@ -142,7 +142,7 @@ img {
 }
 
 .item1:hover:after,
-.item1:active {
+.item1:focus:after {
   content: "to play my part";
   text-align: center;
 }
@@ -153,7 +153,7 @@ img {
   transition: ease-in-out 0.5s;
 }
 .item2:hover:after,
-.item2:active {
+.item2:focus:after {
   content: "safe from harm";
   text-align: center;
 }
@@ -165,7 +165,7 @@ img {
 }
 
 .item3:hover:after,
-.item3:active {
+.item3:focus:after {
   content: "was in my heart";
   text-align: center;
 }
@@ -177,7 +177,7 @@ img {
 }
 
 .item4:hover:after,
-.item4:active {
+.item4:focus:after {
   content: "now";
   text-align: center;
 }
@@ -189,7 +189,7 @@ img {
 }
 
 .item5:hover:after,
-.item5:active {
+.item5:focus:after {
   content: "there";
   text-align: center;
 }
@@ -201,7 +201,7 @@ img {
 }
 
 .item6:hover:after,
-.item6:active {
+.item6:active:after {
   content: "get nowhere";
   text-align: center;
 }
@@ -213,7 +213,7 @@ img {
 }
 
 .item7:hover:after,
-.item7:active {
+.item7:active:after {
   content: "follow my heart";
   text-align: center;
 }
@@ -225,7 +225,7 @@ img {
 }
 
 .item8:hover:after,
-.item8:active {
+.item8:active:after {
   content: "back to oz";
   text-align: center;
 }
