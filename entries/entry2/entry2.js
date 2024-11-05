@@ -1,6 +1,3 @@
-// Select the element you want to apply the hover/tap effect to
-const element = document.querySelector('.item1', 'item2', 'item3');
-
 // Function to trigger hover-like behavior on tap
 function onHoverEffect() {
   element.classList.add('active');  // Adds a class for hover-like styling
