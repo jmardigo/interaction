@@ -31,7 +31,7 @@
 
 h1 {
     font-family: antipoda-variable;
-    font-size: 8vw;
+    font-size: 15vw;
 	z-index: 1;
 	color: aliceblue;
     text-align: center;
@@ -109,5 +109,25 @@ p.text2 {
 .nav:hover {
   img {
     scale: 120%;
+  }
+}
+
+@media all and (max-width: 800px) /*mobile*/ {
+  p{
+    font-size: 5vw;
+  }
+  
+  h1{
+    font-size: 16vh;
+  }
+}
+
+@media (min-width: 801px) /*tablet and desktop*/{
+  p{
+    font-size: 2vw;
+  }
+  
+  h1{
+    font-size: 16vw;
   }
 }
