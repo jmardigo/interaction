@@ -326,3 +326,9 @@ a{
       transition: ease-in-out 0.25s;
     }
   }
+
+  .nav:hover {
+    img {
+      scale: 120%;
+    }
+  }

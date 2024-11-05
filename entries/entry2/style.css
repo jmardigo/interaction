@@ -75,10 +75,6 @@ img {
 
 .nav {
   position: fixed;
-  float: right;
-  color: white;
-  font-family: just me again down here;
-  text-align: center;
   bottom: 2vh;
   left: 2vh;
   text-decoration: none;

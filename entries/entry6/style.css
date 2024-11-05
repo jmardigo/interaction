@@ -78,30 +78,24 @@ body {
 
 .nav {
   position: fixed;
-  float: right;
-  color: white;
-  font-family: just me again down here;
-  text-align: center;
   bottom: 2vh;
   left: 2vh;
-  border-radius: 25vh;
   text-decoration: none;
-  a{
+  a {
     text-decoration: none;
     color: white;
     align-items: center;
     justify-content: center;
-
   }
-  img{
-      width: 5vw;
-      transition: ease-in-out 0.25s;
+  img {
+    width: 10vw;
+    transition: ease-in-out 0.25s;
   }
 }
 
-.nav:hover{
-  img{
-      scale: 120%;
+.nav:hover {
+  img {
+    scale: 120%;
   }
 }
 
