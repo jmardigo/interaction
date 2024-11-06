@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     height: 300vh;
-    width: 90vw;
+    width: 100vw;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .row1{
@@ -20,19 +21,36 @@
     height: 30vw;
     width: 30vw;
     border-radius: 100%;
-    background-color: black;
-    animation: inner-shadow-pop ease-in-out alternate infinite .5s;
-    color: white;
+    background-color: white;
+    animation: inner-shadow-pop ease-in-out alternate infinite 1s;
+    color: black;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 1vw;
 }
 
 @keyframes inner-shadow-pop{
     from
-    {box-shadow: green 0px 0px inset}
+    {box-shadow: rgb(115, 0, 255) 0px 0px inset;
+    rotate: 0deg;}
     to
-    {box-shadow: green 10px 10px inset}
+    {box-shadow: rgb(255, 0, 222) 10px 10px inset;
+    rotate: 360deg;}
+}
+
+@keyframes shake-rotate{
+    from
+    {rotate: -5deg;}
+    to
+    {rotate: 5deg;}
+}
+
+@keyframes shake-position{
+    from
+    {translate: 0px 0px;}
+    to
+    {translate: 5px 8px}
 }
 
 .circle2{
@@ -41,11 +59,15 @@
     width: 30vw;
     border-radius: 25vh;
     background-color: black;
-    animation: inner-shadow-pop ease-in-out alternate infinite .5s;
+    animation: inner-shadow-pop ease-in-out alternate infinite 1s;
+    animation-delay: .5s;
     color: white;
     justify-content: center;
     text-align: center;
     align-items: center;
+    border: 3px inset white;
+
+    margin: 1vw;
 }
 
 #section1{
@@ -54,8 +76,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 99vw;
-    background-color: pink;
+    width: 100vw;
+    background-color: transparent;
 }
 
 #section2{
@@ -63,7 +85,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 99vw;
-    background-color: blue;
+    height: 50vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+#section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: transparent;
+    color: white;
+    overflow: wrap;
+    text-wrap: wrap;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+
+h1{
+    color: white;
+}
+
+.shake{
+    animation: shake-rotate ease-in-out alternate infinite .25s;
 }
