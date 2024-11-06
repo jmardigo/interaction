@@ -9,7 +9,7 @@
 
 .bgd-image-marble{
     display: flex;
-    background-image: url(../../IMAGES/marble.png);
+    background-image: url(../../images/marble.png);
     background-size: contain;
     padding: 0px;
     flex-direction: column;
@@ -54,7 +54,6 @@
 
 .indent{
     padding-left: 8vw;
-    font-size: 4vw;
     /*border-bottom: 2px dashed purple;*/
 }
 
@@ -83,7 +82,7 @@ h2{
     }
 }
 
-@media (min-width: 801px) and (max-width: 1439px) /*tablet*/ {
+@media (min-width: 601px) and (max-width: 1439px) /*tablet*/ {
     .marble-label{
         width: 50vw;
         height: 30vh;
@@ -94,19 +93,35 @@ h2{
    .nav{
     font-size: 4vw;
    }
+   .indent{
+    font-size: 4vw;
+   }
 
 }
 
-@media all and (max-width: 800px) /*mobile*/ {
+@media all and (max-width: 600px) /*mobile*/ {
     .marble-label{
         width: 40vw;
-        height: 10vw;
+        height: 20vw;
+        font-size: 15vw;
     }
     .bgd-image-marble{
-        height: 60vh;
+        height: 100vh;
     }
     .nav{
         font-size: 5vw;
+    }
+    .indent{
+        font-size: 10vw;
+        text-align: center;
+    }
+    h1{
+        font-size: 15vw;
+        text-align: center;
+    }
+    h2{
+        font-size: 12vw;
+        text-align: center;
     }
 }
 
