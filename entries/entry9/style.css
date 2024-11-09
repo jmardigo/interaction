@@ -1,8 +1,12 @@
+/*html{
+    cursor: none;
+}*/
+
 .wrapper{
     display: flex;
     flex-direction: column;
     height: 300vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -28,6 +32,9 @@
     text-align: center;
     align-items: center;
     margin: 1vw;
+    background-image: url(../../images/disco-ball.png);
+    background-size: none;
+    border: 3px solid black;
 }
 
 @keyframes inner-shadow-pop{
@@ -65,8 +72,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 3px inset white;
-
+    border: 3px solid white;
     margin: 1vw;
 }
 
@@ -76,7 +82,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: transparent;
 }
 
@@ -85,8 +91,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     background-color: transparent;
 }
 
@@ -126,3 +133,12 @@ h1{
 .shake{
     animation: shake-rotate ease-in-out alternate infinite .25s;
 }
+
+.circle1:hover, .circle2:hover{
+    background-image: url(../../images/disco-ball.png);
+    background-color: none;
+    background-size: cover;
+    color: white;
+    border: 3px solid white;
+  }
+
