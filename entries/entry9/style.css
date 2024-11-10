@@ -12,12 +12,9 @@
     overflow: hidden;
 }
 
-.row1{
+.row1, .row2{
     display: flex;
-}
-
-.row2{
-    display: flex;
+    flex-direction: row;
 }
 
 .circle1{
@@ -32,8 +29,7 @@
     text-align: center;
     align-items: center;
     margin: 1vw;
-    background-image: url(../../images/disco-ball.png);
-    background-size: none;
+   
     border: 3px solid black;
 }
 
@@ -64,7 +60,7 @@
     display: flex;
     height: 30vw;
     width: 30vw;
-    border-radius: 25vh;
+    border-radius: 100%;
     background-color: black;
     animation: inner-shadow-pop ease-in-out alternate infinite 1s;
     animation-delay: .5s;
@@ -76,44 +72,41 @@
     margin: 1vw;
 }
 
-#section1{
+.section1{
     display: flex;
     flex-direction: column;
+    order: 1;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
     background-color: transparent;
 }
 
-#section2{
+.section2{
     display: flex;
+    order: 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50vh;
-    width: 100%;
+
     background-color: transparent;
 }
 
-#section3{
+.section3{
     display: flex;
+    order: 3;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
     background-color: transparent;
 }
 
-#section4{
+.section4{
     display: flex;
+    order: 4;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    width: 100vw;
     background-color: transparent;
     color: white;
     overflow: wrap;
@@ -134,7 +127,7 @@ h1{
     animation: shake-rotate ease-in-out alternate infinite .25s;
 }
 
-.circle1:hover, .circle2:hover{
+.circle1:hover, .circle2:hover, .circle1:active, .circle2:active{
     background-image: url(../../images/disco-ball.png);
     background-color: none;
     background-size: cover;
@@ -142,3 +135,152 @@ h1{
     border: 3px solid white;
   }
 
+@media all and (max-width: 600px) /*mobile*/ {
+    .row1, .row2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circle1, .circle2{
+        height: 50vw;
+        width: 50vw;
+        margin: 5vh;
+        font-size: 10vw;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        padding-top: auto;
+    }
+
+    .section1, .section3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 2vh;
+        padding: 5vw;
+    }
+
+    .section2, .section4{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 10vh;
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    .section4{
+        width: 75vw;
+    }
+  }
+
+@media (min-width: 601px) and (max-width: 1000px) /*tablet*/ {
+    .row1, .row2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .circle1, .circle2{
+        height: 25vw;
+        width: 25vw;
+        margin: 5vh;
+        font-size: 5vw;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+        padding-top: auto;
+    }
+
+    .section1, .section3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 2vh;
+        padding: 5vw;
+    }
+
+    .section2, .section4{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 10vh;
+        text-align: center;
+    }
+
+    .section4{
+        width: 75vw;
+    }
+  }
+
+@media (min-width: 1001px) /*desktop*/ {
+    .row1, .row2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .circle1, .circle2{
+        height: 15vw;
+        width: 15vw;
+        margin: 5vh;
+        font-size: 4vw;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        padding-top: auto;
+    }
+
+    .section1, .section3{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        padding: 5vw;
+    }
+
+    .section2, .section4{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 5vw;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .section4{
+        width: 60vw;
+    }
+  }
+
+  .nav {
+    position: fixed;
+    bottom: 2vh;
+    left: 2vh;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 10vw;
+      transition: ease-in-out 0.25s;
+    }
+  }
+
+  .nav:hover {
+    img {
+      scale: 120%;
+    }
+  }
