@@ -127,7 +127,7 @@ h1{
     animation: shake-rotate ease-in-out alternate infinite .25s;
 }
 
-.circle1:hover, .circle2:hover, .circle1:active, .circle2:active{
+.circle1:hover, .circle2:hover, .circle1:focus, .circle2:focus{
     background-image: url(../../images/disco-ball.png);
     background-color: none;
     background-size: cover;
