@@ -1,0 +1,64 @@
+
+body {
+    background-color:  #69C4A4;
+    transition: all .5s;
+  }
+  
+
+  
+  .button {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    background-color:  white;
+    color:  black;
+    font-size:  60px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align:  center;
+    text-align:  center;
+    transition:  all 100ms;
+    justify-content: left;
+    align-items: center;
+    transition: all .5s ease-in-out;
+
+  }
+
+  .buttonDotPink{
+    background-color: #C85A75;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+  
+  .buttonDotGreen{
+    background-color: #69C4A4;
+  }
+
+  .button:hover {
+    background-color: skyblue;
+    cursor:  pointer;
+  }
+  
+  .buttonOn {
+    background-color:  black;
+    color:  white;
+    justify-content: right;
+  }
+  
+  .light {
+    background-color: #C85A75;
+  }
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-kid{
+    width: 75vw;
+}
+
