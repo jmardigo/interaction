@@ -4,47 +4,44 @@ body {
     transition: all .5s;
   }
   
-
+.button-container{
+  background-color: blue;
+  order: 3;
+  /*transform: rotate(90deg);*/
+}
   
   .button {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 25em;
     display: flex;
     background-color:  white;
     color:  black;
-    font-size:  60px;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
+    width: 10vw;
+    height: 5vw;
     text-align:  center;
-    text-align:  center;
-    transition:  all 100ms;
-    justify-content: left;
     align-items: center;
     transition: all .5s ease-in-out;
+    position: relative;
 
   }
 
   .buttonDotPink{
     background-color: #C85A75;
-    width: 20px;
-    height: 20px;
+    width: 5vw;
+    height: 5vw;
     border-radius: 100%;
+    transition: all .5s ease-in-out
   }
   
   .buttonDotGreen{
     background-color: #69C4A4;
+    transform: translateX(100%);
   }
 
-  .button:hover {
-    background-color: skyblue;
-    cursor:  pointer;
-  }
   
   .buttonOn {
-    background-color:  black;
     color:  white;
-    justify-content: right;
+    transition: all ease-in-out .5s;
   }
   
   .light {
@@ -59,6 +56,47 @@ body {
 }
 
 .new-kid{
-    width: 75vw;
+    width: 50vw;
+    order: 2;
+    background-color: green;
 }
 
+.textOne{
+  font-size: larger;
+  order: 1;
+  color: black;
+  background-color: red;
+  width: 15vw;
+}
+
+.textOneOff{
+  color: transparent;
+  width: 15vw;
+
+}
+
+.textTwo{
+  font-size: larger;
+  order: 3;
+  background-color: red;
+  width: 15vw;
+  color: black;
+}
+
+.textTwoOff{
+  order: 3;
+  background-color: red;
+  color: transparent;
+  width: 15vw;
+
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 98vw;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+}
