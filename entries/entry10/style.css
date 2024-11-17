@@ -5,14 +5,13 @@ body {
   }
   
 .button-container{
-  background-color: blue;
   order: 3;
   /*transform: rotate(90deg);*/
 }
   
   .button {
-    padding: 10px;
     border-radius: 25em;
+    padding: 1vw;
     display: flex;
     background-color:  white;
     color:  black;
@@ -56,47 +55,157 @@ body {
 }
 
 .new-kid{
-    width: 50vw;
+    width: 45vw;
     order: 2;
-    background-color: green;
 }
 
 .textOne{
   font-size: larger;
   order: 1;
   color: black;
-  background-color: red;
-  width: 15vw;
+  text-wrap: wrap;
 }
 
 .textOneOff{
   color: transparent;
-  width: 15vw;
 
 }
 
-.textTwo{
-  font-size: larger;
-  order: 3;
-  background-color: red;
-  width: 15vw;
-  color: black;
-}
 
-.textTwoOff{
-  order: 3;
-  background-color: red;
-  color: transparent;
-  width: 15vw;
-
-}
 
 .row{
   display: flex;
-  flex-direction: row;
-  width: 98vw;
-  background-color: orange;
   justify-content: center;
   align-items: center;
+  margin: 1vw;
   padding: 1vw;
+}
+
+.pink{
+  color: #C85A75;
+}
+
+.green{
+  color: #69C4A4;
+}
+
+.new-zen{
+  font-family: new-zen, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.text-container{
+  font-family: new-zen;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  /*background-color: green;*/
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 600px) /*mobile*/ {
+  /*temp*/
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+  .text-container{
+    order: 3;
+    text-align: center;
+    width: 50vw;
+    font-size: 5vw;
+  }
+  .new-kid{
+    /*temp*/
+    display: flex;
+    width: 90vw;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) /*tablet*/ {
+  /*temp*/
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+  .text-container{
+    order: 3;
+    text-align: center;
+    width: 30vw;
+    font-size: 2vw;
+  }
+  .new-kid{
+    /*temp*/
+    display: flex;
+    width: 40vw;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1001px) /*desktop*/ {
+  /*temp*/
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+  .text-container{
+    order: 1;
+    text-align: center;
+    width: 30vw;
+    font-size: 3vw;
+  }
+  .new-kid{
+    /*temp*/
+    display: flex;
+    width: 60vw;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav {
+  position: fixed;
+  bottom: 2vh;
+  left: 2vh;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 10vw;
+    transition: ease-in-out 0.25s;
+  }
+}
+
+.nav:hover {
+  img {
+    scale: 120%;
+  }
 }

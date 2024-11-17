@@ -22,7 +22,6 @@
     height: 30vw;
     width: 30vw;
     border-radius: 100%;
-    background-color: white;
     animation: inner-shadow-pop ease-in-out alternate infinite 1s;
     color: black;
     justify-content: center;
@@ -68,7 +67,6 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 3px solid white;
     margin: 1vw;
 }
 
@@ -130,9 +128,8 @@ h1{
 .circle1:hover, .circle2:hover, .circle1:focus, .circle2:focus{
     background-image: url(../../images/disco-ball.png);
     background-color: none;
-    background-size: cover;
-    color: white;
-    border: 3px solid white;
+    background-size: 120%;
+    background-position: center;
   }
 
 @media all and (max-width: 600px) /*mobile*/ {
