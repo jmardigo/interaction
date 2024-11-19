@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(246, 254, 255);
+  background-color: #ffd5c3;
   overflow-x:hidden; /*preventing the horizontal scroll bar if the text jumps outside*/
 }
 h1 {
@@ -76,6 +76,7 @@ a:active {
   justify-content: center;
   overflow-x:hidden; /*preventing the horizontal scroll bar if the text jumps outside*/
   overflow-y:hidden; /*preventing the horizontal scroll bar if the text jumps outside*/
+  color: #541d05;
 
 }
 
@@ -84,7 +85,7 @@ a:active {
   flex-direction: column;
   margin: 3vw;
   width: 75vw;
-  height: 300vh;
+  height: 200vh;
   /*background-color: red;*/
   text-align: center;
   align-items: center;
@@ -142,8 +143,9 @@ a:active {
 .buttonA{
   display: block;
   position: relative;
-  background-color: white;
-  border: 2px black solid;
+  background-color: #541d05;
+  color:#ffd5c3 ;
+  border: none;
   border-radius: 100em;
   text-decoration: none;
   width: 75vw;
@@ -186,7 +188,6 @@ a:active {
   }
   h1{
     font-size: 7vw;
-    background-color: red;
   }
   .buttonA{
     font-size: 6vw;

@@ -26,8 +26,8 @@ let trh = document.querySelector(".textRowH");
 button.addEventListener("click",changeA);
 function changeA()
 {
-    var a = Math.floor(Math.random()*tch);
-    var b = Math.floor(Math.random()*tcw);
+    var a = Math.floor(Math.random()*tch)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     tra.style.top = a+"px";
     tra.style.left = b+"px";
     /*you can probably just order it so the initial variable is shuffled
@@ -35,31 +35,31 @@ function changeA()
     of this and i'm too lazy to take it outtt!
     ^^^haha loser you ended up having to do it anyways! el oh el*/
     var a = Math.floor(Math.random()*tch)-5;
-    var b = Math.floor(Math.random()*tcw)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     trb.style.top = a+"px";
     trb.style.left = b+"px";
     var a = Math.floor(Math.random()*tch)-5;
-    var b = Math.floor(Math.random()*tcw)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     trc.style.top = a+"px";
     trc.style.left = b+"px";
     var a = Math.floor(Math.random()*tch)-5;
-    var b = Math.floor(Math.random()*tcw)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     trd.style.top = a+"px";
     trd.style.left = b+"px";
     var a = Math.floor(Math.random()*tch)-5;
-    var b = Math.floor(Math.random()*tcw)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     tre.style.top = a+"px";
     tre.style.left = b+"px";
     var a = Math.floor(Math.random()*tch)-5;
-    var b = Math.floor(Math.random()*tcw)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     trf.style.top = a+"px";
     trf.style.left = b+"px";
     var a = Math.floor(Math.random()*tch)-5;
-    var b = Math.floor(Math.random()*tcw)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     trg.style.top = a+"px";
     trg.style.left = b+"px";
     var a = Math.floor(Math.random()*tch)-5;
-    var b = Math.floor(Math.random()*tcw)-5;
+    var b = Math.floor(Math.random()*tcw)-100;
     trh.style.top = a+"px";
     trh.style.left = b+"px";
 }
