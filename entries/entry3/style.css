@@ -101,7 +101,6 @@ p.text2 {
     justify-content: center;
   }
   img {
-    width: 10vw;
     transition: ease-in-out 0.25s;
   }
 }
@@ -112,7 +111,7 @@ p.text2 {
   }
 }
 
-@media all and (max-width: 800px) /*mobile*/ {
+@media all and (max-width: 600px) /*mobile*/ {
   p{
     font-size: 5vw;
   }
@@ -120,14 +119,24 @@ p.text2 {
   h1{
     font-size: 20vw;
   }
+  .nav{
+    img{
+      width: 20vw;
+    }
+  }
 }
 
-@media (min-width: 801px) /*tablet and desktop*/{
+@media (min-width: 601px) /*tablet and desktop*/{
   p{
     font-size: 2vw;
   }
   
   h1{
     font-size: 16vw;
+  }
+  .nav{
+    img{
+      width: 10vw;
+    }
   }
 }

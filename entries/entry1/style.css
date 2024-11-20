@@ -145,7 +145,7 @@ a:active {
   position: relative;
   background-color: #541d05;
   color:#ffd5c3 ;
-  border: none;
+  border: 3px #541d05 solid;
   border-radius: 100em;
   text-decoration: none;
   width: 75vw;
@@ -154,6 +154,12 @@ a:active {
   align-items: center;
   margin-bottom: 10vh;
 }
+
+.buttonA:hover{
+  background-color: #ffd5c3;
+  color:#541d05;
+  border: 3px #541d05 solid;
+ }
 
 @media all and (max-width: 600px) /*mobile*/ {
   /*temp*/
@@ -165,6 +171,11 @@ a:active {
   }
   .buttonA{
     font-size: 7vw;
+  }
+  .nav{
+    img{
+      width: 20vw;
+    }
   }
 }
 
@@ -179,6 +190,11 @@ a:active {
   .buttonA{
     font-size: 5vw;
   }
+  .nav{
+    img{
+      width: 10vw;
+    }
+  }
 }
 
 @media (min-width: 1001px) /*desktop*/ {
@@ -192,4 +208,11 @@ a:active {
   .buttonA{
     font-size: 6vw;
   }
+  .nav{
+    img{
+      width: 10vw;
+    }
+  }
 }
+
+

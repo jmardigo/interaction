@@ -35,7 +35,11 @@
       align-items: center;
       font-style: bold;
       font-size: 5vw;
+      img{
+        width: 20vw;
+      }
     }
+  
   
   
   
@@ -112,7 +116,11 @@
       bottom: 15%;
     }
   
-    
+    .nav{
+      img{
+        width: 10vw;
+      }
+    }
   }
   
   @import url("https://p.typekit.net/p.css?s=1&k=xej1fur&ht=tk&f=51557.55979.56530.56534.56535&a=166250822&app=typekit&e=css");
@@ -262,7 +270,6 @@
       justify-content: center;
     }
     img {
-      width: 10vw;
       transition: ease-in-out 0.25s;
     }
   }

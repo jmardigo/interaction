@@ -85,7 +85,6 @@ img {
     justify-content: center;
   }
   img {
-    width: 10vw;
     transition: ease-in-out 0.25s;
   }
 }
@@ -249,9 +248,22 @@ img {
     width: 80vw;
     font-size: 10vw;
   }
+
+  .nav{
+    img{
+      width: 20vw;
+    }
+  }
 }
 
+
 @media (min-width: 801px) and (max-width: 1439px) /*tablet*/ {
+  .nav{
+    img{
+      width: 10vw;
+    }
+  }
+  
   .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -273,6 +285,12 @@ img {
 }
 
 @media (min-width: 1440px) /*desktop*/ {
+  .nav{
+    img{
+      width: 10vw;
+    }
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
