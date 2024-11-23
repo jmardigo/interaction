@@ -1,0 +1,124 @@
+
+body {
+    background-color: #FFF7D1;
+   }
+   
+   .wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: auto;
+   }
+   
+   .button {
+     background-color: #ec6161;
+     color: #FFF7D1;
+     font-size: 5vh;
+     padding: 3vh;
+     width: 75vw;
+     text-align: center;
+     border-radius: 1em;
+     user-select: none; /*disables the text highlighting thing when you spam click the button*/
+     font-family: "komet", sans-serif;;
+
+   }
+   
+   .button:hover {
+     cursor: pointer;
+     opacity: 80%;
+     transition: 8ms ease-out;
+   }
+
+.cA{
+    font-family: "komet", sans-serif;
+    font-weight: 300;
+    color: #ec6161;
+}
+
+.cB{
+    font-family: "komet", sans-serif;
+    font-weight: 400;
+    color: #ec6161;
+
+
+
+}
+
+.cC{
+    font-family: "komet", sans-serif;
+    font-weight: 800;
+    color: #ec6161;
+
+
+}
+
+.cD{
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    color: #ec6161;
+
+}
+
+/*weights
+300
+400
+800
+900
+*/
+
+.span-container{
+    display: inline;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    text-align:justify;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ec6161;
+    border-radius: 1em;
+}
+
+@media all and (max-width: 600px) /*mobile*/{
+    .text-container{
+        padding: 4vw;
+        margin: 5vw;
+    }
+    .nav{
+        img{
+          width: 20vw;
+        }
+      }
+}
+
+@media all and (min-width: 601px) /*tablet and desktop*/{
+    .text-container{
+        padding: 2vw;
+        margin: 2vw;
+
+    }
+    .nav{
+        img{
+          width: 10vw;
+        }
+    }
+}
+
+.nav {
+    position: fixed;
+    bottom: 2vh;
+    left: 2vh;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      transition: ease-in-out 0.25s;
+    }
+  }
