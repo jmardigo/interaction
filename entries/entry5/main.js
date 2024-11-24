@@ -1,35 +1,22 @@
-// create instance of kinet with custom settings
-var kinet = new Kinet({
-    acceleration: 0.06,
-    friction: 0.20,
-    names: ["x", "y"],
+// Get the cursor element
+const cursor = document.querySelector('.cursor');
+
+// Update the cursor position based on mouse movement
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = `${e.pageX}px`;
+  cursor.style.top = `${e.pageY}px`;
+});
+
+// Add event listener to make the text visible when hovering inside the circle
+const texts = document.querySelectorAll('.text');
+
+// When the cursor moves over the text, reveal it inside the circle
+texts.forEach(text => {
+  text.addEventListener('mouseenter', () => {
+    text.classList.add('visible'); // Reveal text inside the circle
   });
-  
-  // select circle element
-  var circle = document.getElementById('circle');
-  
-  // set handler on kinet tick event
-  kinet.on('tick', function(instances) {
-    circle.style.transform = `translate3d(${ (instances.x.current) }px, ${ (instances.y.current) }px, 0) rotateX(${ (instances.x.velocity/2) }deg) rotateY(${ (instances.y.velocity/2) }deg)`;
+
+  text.addEventListener('mouseleave', () => {
+    text.classList.remove('visible'); // Hide text when the cursor moves away
   });
-  
-  // call kinet animate method on mousemove
-  document.addEventListener('mousemove', function (event) {
-    kinet.animate('x', event.clientX - window.innerWidth/2);
-    kinet.animate('y', event.clientY - window.innerHeight/2);
-  });
-  
-  
-  
-  
-  
-  
-  
-  // log
-  kinet.on('start', function() {
-    console.log('start');
-  });
-  
-  kinet.on('end', function() {
-    console.log('end');
-  });
+});
