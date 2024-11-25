@@ -14,7 +14,6 @@ body {
   align-items: center;
   position: relative;
   border: 3px solid white;
-  z-index: 1;
   padding: 3vw;
 }
 
@@ -65,4 +64,43 @@ html{
   height: auto;
   align-items: center;
   justify-content: center;
+}
+
+.nav {
+  position: fixed;
+  bottom: 2vh;
+  left: 2vh;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 10vw;
+    transition: ease-in-out 0.25s;
+  }
+}
+
+.nav:hover {
+  img {
+    scale: 120%;
+  }
+}
+
+@media all and (max-width: 600px) /*mobile*/ {
+  .nav{
+    img{
+      width: 20vw;
+    }
+  }
+}
+
+@media all and (min-width: 601px) /*desktop and tablet*/ {
+  .nav{
+    img{
+      width: 10vw;
+    }
+  }
 }
