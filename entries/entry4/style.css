@@ -217,7 +217,7 @@
     height: 75vh;
     justify-content: center;
     align-items: center;
-    background-image: url("../../IMAGES/wooden-sign-bgd.png");
+    background-image: url("../../images//wooden-sign-bgd.png");
     background-size: cover;
     border-radius: 8vw;
   }
