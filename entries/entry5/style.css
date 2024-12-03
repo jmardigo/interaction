@@ -4,6 +4,7 @@ body {
   padding: 2vw;
   background-color: black;
   color: white;
+  user-select: none; /* Prevent text selection */
 }
 
 /* Container for the text */
