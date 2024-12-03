@@ -94,6 +94,7 @@ p.text2 {
   bottom: 2vh;
   left: 2vh;
   text-decoration: none;
+  z-index: 2;
   a {
     text-decoration: none;
     color: white;
